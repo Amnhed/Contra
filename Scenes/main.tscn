@@ -84,56 +84,55 @@ extents = Vector2( 16.0332, 4.69058 )
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 115.907, 10 )
 
-[sub_resource type="RectangleShape2D" id=31]
+[sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 15.2112, 10 )
 
-[sub_resource type="RectangleShape2D" id=32]
+[sub_resource type="RectangleShape2D" id=28]
 extents = Vector2( 14.6716, 10 )
 
-[sub_resource type="RectangleShape2D" id=33]
+[sub_resource type="RectangleShape2D" id=29]
 extents = Vector2( 31.7378, 10 )
 
-[sub_resource type="RectangleShape2D" id=34]
+[sub_resource type="RectangleShape2D" id=30]
 extents = Vector2( 30.1194, 10 )
 
-[sub_resource type="RectangleShape2D" id=35]
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 99.156, 10 )
 
-[sub_resource type="RectangleShape2D" id=36]
+[sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 108.865, 10 )
 
-[sub_resource type="RectangleShape2D" id=37]
+[sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 31.1982, 10 )
 
-[sub_resource type="RectangleShape2D" id=38]
+[sub_resource type="RectangleShape2D" id=34]
 extents = Vector2( 47.4835, 10 )
 
-[sub_resource type="RectangleShape2D" id=39]
+[sub_resource type="RectangleShape2D" id=35]
 extents = Vector2( 31.4757, 10 )
 
-[sub_resource type="RectangleShape2D" id=40]
+[sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 48.5884, 10 )
 
-[sub_resource type="RectangleShape2D" id=41]
+[sub_resource type="RectangleShape2D" id=37]
 extents = Vector2( 32.9472, 10 )
 
-[sub_resource type="RectangleShape2D" id=42]
+[sub_resource type="RectangleShape2D" id=38]
 extents = Vector2( 14.9535, 7.24877 )
 
-[sub_resource type="RectangleShape2D" id=43]
+[sub_resource type="RectangleShape2D" id=39]
 extents = Vector2( 34.1476, 10 )
 
-[sub_resource type="RectangleShape2D" id=44]
+[sub_resource type="RectangleShape2D" id=40]
 extents = Vector2( 16.349, 7.03954 )
 
-[sub_resource type="RectangleShape2D" id=45]
+[sub_resource type="RectangleShape2D" id=41]
 extents = Vector2( 47.4088, 4.17708 )
 
-[sub_resource type="RectangleShape2D" id=27]
+[sub_resource type="RectangleShape2D" id=42]
 extents = Vector2( 9.67815, 17.9722 )
 
-[sub_resource type="Animation" id=30]
-resource_name = "j1_salto"
+[sub_resource type="Animation" id=43]
 tracks/0/type = "value"
 tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
 tracks/0/interp = 1
@@ -171,8 +170,7 @@ tracks/2/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="Animation" id=28]
-resource_name = "j_corriendo"
+[sub_resource type="Animation" id=44]
 length = 0.4
 loop = true
 step = 0.4
@@ -213,8 +211,7 @@ tracks/2/keys = {
 "values": [ ExtResource( 2 ) ]
 }
 
-[sub_resource type="Animation" id=29]
-resource_name = "j_idle"
+[sub_resource type="Animation" id=45]
 length = 0.1
 tracks/0/type = "value"
 tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
@@ -479,7 +476,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo27"]
 position = Vector2( 574.465, 40.999 )
-shape = SubResource( 31 )
+shape = SubResource( 27 )
 
 [node name="suelo28" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -488,7 +485,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo28"]
 position = Vector2( 221.73, -6.07851 )
-shape = SubResource( 32 )
+shape = SubResource( 28 )
 
 [node name="suelo29" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -497,7 +494,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo29"]
 position = Vector2( 144.603, 8.68309 )
-shape = SubResource( 33 )
+shape = SubResource( 29 )
 
 [node name="suelo30" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -506,7 +503,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo30"]
 position = Vector2( 47.5199, 9.48101 )
-shape = SubResource( 34 )
+shape = SubResource( 30 )
 
 [node name="suelo31" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -515,7 +512,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo31"]
 position = Vector2( -81.9241, 42.5948 )
-shape = SubResource( 35 )
+shape = SubResource( 31 )
 
 [node name="suelo32" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -524,7 +521,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo32"]
 position = Vector2( -190.334, -22.037 )
-shape = SubResource( 36 )
+shape = SubResource( 32 )
 
 [node name="suelo33" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -533,7 +530,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo33"]
 position = Vector2( -370.477, -6.87645 )
-shape = SubResource( 37 )
+shape = SubResource( 33 )
 
 [node name="suelo34" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -542,7 +539,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo34"]
 position = Vector2( -447.604, 41.9615 )
-shape = SubResource( 38 )
+shape = SubResource( 34 )
 
 [node name="suelo35" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -551,7 +548,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo35"]
 position = Vector2( -1266.34, 42.7594 )
-shape = SubResource( 39 )
+shape = SubResource( 35 )
 
 [node name="suelo36" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -560,7 +557,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo36"]
 position = Vector2( -1215.64, -6.31289 )
-shape = SubResource( 40 )
+shape = SubResource( 36 )
 
 [node name="suelo37" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -569,7 +566,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo37"]
 position = Vector2( -1456.19, -22.2714 )
-shape = SubResource( 41 )
+shape = SubResource( 37 )
 
 [node name="suelo38" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -578,7 +575,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo38"]
 position = Vector2( -1537.41, 8.14462 )
-shape = SubResource( 42 )
+shape = SubResource( 38 )
 
 [node name="suelo39" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -587,7 +584,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo39"]
 position = Vector2( -1586.49, 41.7523 )
-shape = SubResource( 43 )
+shape = SubResource( 39 )
 
 [node name="suelo40" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -596,7 +593,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo40"]
 position = Vector2( -1633.73, 7.77079 )
-shape = SubResource( 44 )
+shape = SubResource( 40 )
 
 [node name="suelo41" type="StaticBody2D" parent="backgroung" groups=[
 "suelo",
@@ -605,7 +602,7 @@ position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo41"]
 position = Vector2( -1698.45, -23.3482 )
-shape = SubResource( 45 )
+shape = SubResource( 41 )
 
 [node name="jugador1" type="Position2D" parent="."]
 position = Vector2( 370.518, -9.39073 )
@@ -618,7 +615,7 @@ VELOCIDAD_SALTO = 500.0
 position = Vector2( -2.42175, -6.72023 )
 
 [node name="colision_j1" type="CollisionShape2D" parent="jugador1/cuerpo_j1"]
-shape = SubResource( 27 )
+shape = SubResource( 42 )
 
 [node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
 position = Vector2( -0.250854, -1.5 )
@@ -631,6 +628,6 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="animacion_j1" type="AnimationPlayer" parent="jugador1"]
-anims/j1_salto = SubResource( 30 )
-anims/j_corriendo = SubResource( 28 )
-anims/j_idle = SubResource( 29 )
+anims/j1_salto = SubResource( 43 )
+anims/j_corriendo = SubResource( 44 )
+anims/j_idle = SubResource( 45 )

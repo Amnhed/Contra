@@ -25,10 +25,10 @@ func _physics_process(delta):
 			get_node("animacion_j1").play("j_corriendo")
 			get_node("cuerpo_j1/spr_j1").flip_h = false
 	elif(Input.is_action_pressed("tecla_d")):
-		Velocidad.x = VELOCIDAD_MOVIMIENTO
 		if(!get_node("animacion_j1").is_playing()):
 			get_node("animacion_j1").play("j_corriendo")
 			get_node("cuerpo_j1/spr_j1").flip_h = true
+		Velocidad.x = VELOCIDAD_MOVIMIENTO
 	else:
 		Velocidad.x = 0
 		get_node("animacion_j1").play("j_idle")
@@ -42,11 +42,14 @@ func _physics_process(delta):
 	get_node("cuerpo_j1").move_and_slide(movimiento)#nodem que quiero mover
 	
 	#if existe un objeto con el que colisiono
+	
 	if(get_node("cuerpo_j1").get_slide_collision(get_node("cuerpo_j1").get_slide_count()-1) != null):
-		#obtengo el numero total de colisionadores y el utimo colisionador con '.colider' obtenemos el ojeto de colision
 		var obj_colisionado = get_node("cuerpo_j1").get_slide_collision(get_node("cuerpo_j1").get_slide_count()-1).collider
+		#obtengo el numero total de colisionadores y el utimo colisionador con '.colider' obtenemos el ojeto de colision
 		if(obj_colisionado.is_in_group("suelo")):
 			print("Hola")
+	else:
+		print("byee")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
