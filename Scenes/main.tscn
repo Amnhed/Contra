@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://jugador1.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/j1_run.png" type="Texture" id=2]
+[ext_resource path="res://Tile/nivel1.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9.67815, 17.9722 )
+
+[node name="main" type="Node"]
+
+[node name="backgroung" type="Sprite" parent="."]
+texture = ExtResource( 3 )
+
+[node name="jugador1" type="Position2D" parent="."]
+position = Vector2( 153.517, 65.3039 )
+script = ExtResource( 1 )
+GRAVEDAD = 5000.0
+
+[node name="cuerpo_j1" type="KinematicBody2D" parent="jugador1"]
+
+[node name="colision_j1" type="CollisionShape2D" parent="jugador1/cuerpo_j1"]
+shape = SubResource( 1 )
+
+[node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
+texture = ExtResource( 2 )
+hframes = 5
