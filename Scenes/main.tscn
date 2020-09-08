@@ -211,7 +211,7 @@ tracks/2/keys = {
 [node name="main" type="Node"]
 
 [node name="backgroung" type="Sprite" parent="."]
-position = Vector2( 2022.06, 33.6275 )
+position = Vector2( 2022.06, 31.7376 )
 scale = Vector2( 1.168, 1.579 )
 texture = ExtResource( 3 )
 
@@ -380,6 +380,7 @@ position = Vector2( 43.8279, 0.0587006 )
 script = ExtResource( 1 )
 GRAVEDAD = 5000.0
 VELOCIDAD_MOVIMIENTO = 1250.0
+VELOCIDAD_SALTO = 1250.0
 
 [node name="cuerpo_j1" type="KinematicBody2D" parent="jugador1"]
 position = Vector2( 130.5, -10.5 )

@@ -40,6 +40,11 @@ func _physics_process(delta):
 	
 	var movimiento = Velocidad * delta # velocidad por tiempo
 	get_node("cuerpo_j1").move_and_slide(movimiento)#nodem que quiero mover
+	
+	#if existe un objeto con el que colisiono
+	if(get_node("cuerpo_j1").get_slide_collision(get_node("cuerpo_j1").get_slide_count()-1) != null):
+		#obtengo el numero total de colisionadores y el utimo colisionador con '.colider' obtenemos el ojeto de colision
+		get_node("cuerpo_j1").get_slide_collision(get_node("cuerpo_j1").get_slide_count()-1).collider
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
