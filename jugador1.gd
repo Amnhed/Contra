@@ -20,10 +20,17 @@ func _physics_process(delta):
 	
 	if(Input.is_action_pressed("teacla_a")):
 		Velocidad.x = -VELOCIDAD_MOVIMIENTO
+		if(!get_node("animacion_j1").is_playing()):
+			get_node("animacion_j1").play("j_corriendo")
+			get_node("cuerpo_j1/spr_j1").flip_h = false
 	elif(Input.is_action_pressed("tecla_d")):
 		Velocidad.x = VELOCIDAD_MOVIMIENTO
+		if(!get_node("animacion_j1").is_playing()):
+			get_node("animacion_j1").play("j_corriendo")
+			get_node("cuerpo_j1/spr_j1").flip_h = true
 	else:
 		Velocidad.x = 0
+		get_node("animacion_j1").play("j_idle")
 		
 	
 	var movimiento = Velocidad * delta # velocidad por tiempo
