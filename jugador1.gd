@@ -8,6 +8,7 @@ extends Position2D
 var Velocidad = Vector2()#velocidad en x,y
 export (float) var GRAVEDAD = 100
 export (float) var VELOCIDAD_MOVIMIENTO = 25
+export (float) var VELOCIDAD_SALTO = 25
 
 
 # Called when the node enters the scene tree for the first time.
@@ -31,6 +32,10 @@ func _physics_process(delta):
 	else:
 		Velocidad.x = 0
 		get_node("animacion_j1").play("j_idle")
+		
+	if(Input.is_action_pressed("tecla_z")):
+		Velocidad.y -= VELOCIDAD_SALTO
+		get_node("animacion_j1").play("j1_salto")
 		
 	
 	var movimiento = Velocidad * delta # velocidad por tiempo

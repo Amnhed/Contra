@@ -1,9 +1,10 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://jugador1.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/j1_run.png" type="Texture" id=2]
 [ext_resource path="res://Tile/nivel1.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/j1_idle.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/j1_salto.png" type="Texture" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 369.179, 5.34577 )
@@ -85,6 +86,45 @@ extents = Vector2( 115.907, 10 )
 
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 9.67815, 17.9722 )
+
+[sub_resource type="Animation" id=30]
+resource_name = "j1_salto"
+tracks/0/type = "value"
+tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("cuerpo_j1/spr_j1:hframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("cuerpo_j1/spr_j1:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
 
 [sub_resource type="Animation" id=28]
 resource_name = "j_corriendo"
@@ -349,8 +389,9 @@ shape = SubResource( 27 )
 
 [node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
 position = Vector2( -0.250854, -1.5 )
-texture = ExtResource( 4 )
-hframes = 2
+texture = ExtResource( 5 )
+hframes = 4
+frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="jugador1/cuerpo_j1"]
 position = Vector2( 83.5829, 6.93738 )
@@ -358,5 +399,6 @@ current = true
 zoom = Vector2( 0.5, 0.5 )
 
 [node name="animacion_j1" type="AnimationPlayer" parent="jugador1"]
+anims/j1_salto = SubResource( 30 )
 anims/j_corriendo = SubResource( 28 )
 anims/j_idle = SubResource( 29 )
