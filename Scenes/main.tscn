@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://jugador1.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/j1_run.png" type="Texture" id=2]
@@ -83,6 +83,51 @@ extents = Vector2( 16.0332, 4.69058 )
 
 [sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 115.907, 10 )
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 15.2112, 10 )
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 14.6716, 10 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 31.7378, 10 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 30.1194, 10 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 99.156, 10 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 108.865, 10 )
+
+[sub_resource type="RectangleShape2D" id=37]
+extents = Vector2( 31.1982, 10 )
+
+[sub_resource type="RectangleShape2D" id=38]
+extents = Vector2( 47.4835, 10 )
+
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 31.4757, 10 )
+
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 48.5884, 10 )
+
+[sub_resource type="RectangleShape2D" id=41]
+extents = Vector2( 32.9472, 10 )
+
+[sub_resource type="RectangleShape2D" id=42]
+extents = Vector2( 14.9535, 7.24877 )
+
+[sub_resource type="RectangleShape2D" id=43]
+extents = Vector2( 34.1476, 10 )
+
+[sub_resource type="RectangleShape2D" id=44]
+extents = Vector2( 16.349, 7.03954 )
+
+[sub_resource type="RectangleShape2D" id=45]
+extents = Vector2( 47.4088, 4.17708 )
 
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 9.67815, 17.9722 )
@@ -211,191 +256,377 @@ tracks/2/keys = {
 [node name="main" type="Node"]
 
 [node name="backgroung" type="Sprite" parent="."]
-position = Vector2( 2022.06, 31.7376 )
+position = Vector2( 2242.55, 34.8875 )
 scale = Vector2( 1.168, 1.579 )
 texture = ExtResource( 3 )
 
-[node name="suelo" type="StaticBody2D" parent="backgroung"]
+[node name="suelo" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo"]
 position = Vector2( -1328.22, -12.2056 )
 shape = SubResource( 1 )
 
-[node name="suelo2" type="StaticBody2D" parent="backgroung"]
+[node name="suelo2" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo2"]
 position = Vector2( -752.733, -11.8067 )
 shape = SubResource( 2 )
 
-[node name="suelo3" type="StaticBody2D" parent="backgroung"]
+[node name="suelo3" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo3"]
 position = Vector2( -416.402, -10.819 )
 shape = SubResource( 3 )
 
-[node name="suelo4" type="StaticBody2D" parent="backgroung"]
+[node name="suelo4" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo4"]
 position = Vector2( -95.4883, -42.337 )
 shape = SubResource( 4 )
 
-[node name="suelo5" type="StaticBody2D" parent="backgroung"]
+[node name="suelo5" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo5"]
 position = Vector2( 241.382, -10.9082 )
 shape = SubResource( 5 )
 
-[node name="suelo6" type="StaticBody2D" parent="backgroung"]
+[node name="suelo6" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo6"]
 position = Vector2( 398.872, -41.2293 )
 shape = SubResource( 6 )
 
-[node name="suelo7" type="StaticBody2D" parent="backgroung"]
+[node name="suelo7" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo7"]
 position = Vector2( 495.827, 23.3328 )
 shape = SubResource( 7 )
 
-[node name="suelo8" type="StaticBody2D" parent="backgroung"]
+[node name="suelo8" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo8"]
 position = Vector2( 545.191, -10.3195 )
 shape = SubResource( 8 )
 
-[node name="suelo9" type="StaticBody2D" parent="backgroung"]
+[node name="suelo9" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo9"]
 position = Vector2( 672.032, -9.42669 )
 shape = SubResource( 9 )
 
-[node name="suelo10" type="StaticBody2D" parent="backgroung"]
+[node name="suelo10" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo10"]
 position = Vector2( 640.305, 22.1861 )
 shape = SubResource( 10 )
 
-[node name="suelo11" type="StaticBody2D" parent="backgroung"]
+[node name="suelo11" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo11"]
 position = Vector2( 768.508, 22.1164 )
 shape = SubResource( 11 )
 
-[node name="suelo12" type="StaticBody2D" parent="backgroung"]
+[node name="suelo12" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo12"]
 position = Vector2( 815.748, 54.198 )
 shape = SubResource( 12 )
 
-[node name="suelo13" type="StaticBody2D" parent="backgroung"]
+[node name="suelo13" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo13"]
 position = Vector2( 911.213, 89.7056 )
 shape = SubResource( 13 )
 
-[node name="suelo14" type="StaticBody2D" parent="backgroung"]
+[node name="suelo14" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo14"]
 position = Vector2( 943.891, 40.2343 )
 shape = SubResource( 14 )
 
-[node name="suelo15" type="StaticBody2D" parent="backgroung"]
+[node name="suelo15" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo15"]
 position = Vector2( 896.617, -9.21178 )
 shape = SubResource( 15 )
 
-[node name="suelo16" type="StaticBody2D" parent="backgroung"]
+[node name="suelo16" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo16"]
 position = Vector2( 927.677, -41.7369 )
 shape = SubResource( 16 )
 
-[node name="suelo17" type="StaticBody2D" parent="backgroung"]
+[node name="suelo17" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo17"]
 position = Vector2( 1024.54, -10.922 )
 shape = SubResource( 17 )
 
-[node name="suelo18" type="StaticBody2D" parent="backgroung"]
+[node name="suelo18" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo18"]
 position = Vector2( 1103.82, 22.9897 )
 shape = SubResource( 18 )
 
-[node name="suelo19" type="StaticBody2D" parent="backgroung"]
+[node name="suelo19" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo19"]
 position = Vector2( 1167.34, 85.7914 )
 shape = SubResource( 19 )
 
-[node name="suelo20" type="StaticBody2D" parent="backgroung"]
+[node name="suelo20" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo20"]
 position = Vector2( 1280.25, 53.4309 )
 shape = SubResource( 20 )
 
-[node name="suelo21" type="StaticBody2D" parent="backgroung"]
+[node name="suelo21" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo21"]
 position = Vector2( 1376.57, 21.3047 )
 shape = SubResource( 21 )
 
-[node name="suelo22" type="StaticBody2D" parent="backgroung"]
+[node name="suelo22" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo22"]
 position = Vector2( 1472.26, -9.22559 )
 shape = SubResource( 22 )
 
-[node name="suelo23" type="StaticBody2D" parent="backgroung"]
+[node name="suelo23" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 position = Vector2( 79.2844, 30.7201 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo23"]
 position = Vector2( 1472.26, -9.22559 )
 shape = SubResource( 23 )
 
-[node name="suelo24" type="StaticBody2D" parent="backgroung"]
+[node name="suelo24" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 position = Vector2( 79.2844, 30.7201 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo24"]
 position = Vector2( 1408.39, 6.68828 )
 shape = SubResource( 24 )
 
-[node name="suelo25" type="StaticBody2D" parent="backgroung"]
+[node name="suelo25" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo25"]
 position = Vector2( 1407.22, 5.89036 )
 shape = SubResource( 25 )
 
-[node name="suelo26" type="StaticBody2D" parent="backgroung"]
+[node name="suelo26" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
 position = Vector2( 176.367, 47.0775 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo26"]
 position = Vector2( 1350.05, 40.999 )
 shape = SubResource( 26 )
 
+[node name="suelo27" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo27"]
+position = Vector2( 574.465, 40.999 )
+shape = SubResource( 31 )
+
+[node name="suelo28" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo28"]
+position = Vector2( 221.73, -6.07851 )
+shape = SubResource( 32 )
+
+[node name="suelo29" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo29"]
+position = Vector2( 144.603, 8.68309 )
+shape = SubResource( 33 )
+
+[node name="suelo30" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo30"]
+position = Vector2( 47.5199, 9.48101 )
+shape = SubResource( 34 )
+
+[node name="suelo31" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo31"]
+position = Vector2( -81.9241, 42.5948 )
+shape = SubResource( 35 )
+
+[node name="suelo32" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo32"]
+position = Vector2( -190.334, -22.037 )
+shape = SubResource( 36 )
+
+[node name="suelo33" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo33"]
+position = Vector2( -370.477, -6.87645 )
+shape = SubResource( 37 )
+
+[node name="suelo34" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo34"]
+position = Vector2( -447.604, 41.9615 )
+shape = SubResource( 38 )
+
+[node name="suelo35" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo35"]
+position = Vector2( -1266.34, 42.7594 )
+shape = SubResource( 39 )
+
+[node name="suelo36" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo36"]
+position = Vector2( -1215.64, -6.31289 )
+shape = SubResource( 40 )
+
+[node name="suelo37" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo37"]
+position = Vector2( -1456.19, -22.2714 )
+shape = SubResource( 41 )
+
+[node name="suelo38" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo38"]
+position = Vector2( -1537.41, 8.14462 )
+shape = SubResource( 42 )
+
+[node name="suelo39" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo39"]
+position = Vector2( -1586.49, 41.7523 )
+shape = SubResource( 43 )
+
+[node name="suelo40" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo40"]
+position = Vector2( -1633.73, 7.77079 )
+shape = SubResource( 44 )
+
+[node name="suelo41" type="StaticBody2D" parent="backgroung" groups=[
+"suelo",
+]]
+position = Vector2( 176.367, 47.0775 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backgroung/suelo41"]
+position = Vector2( -1698.45, -23.3482 )
+shape = SubResource( 45 )
+
 [node name="jugador1" type="Position2D" parent="."]
-position = Vector2( 43.8279, 0.0587006 )
+position = Vector2( 370.518, -9.39073 )
 script = ExtResource( 1 )
 GRAVEDAD = 5000.0
 VELOCIDAD_MOVIMIENTO = 1250.0
-VELOCIDAD_SALTO = 1250.0
+VELOCIDAD_SALTO = 500.0
 
 [node name="cuerpo_j1" type="KinematicBody2D" parent="jugador1"]
-position = Vector2( 130.5, -10.5 )
+position = Vector2( -2.42175, -6.72023 )
 
 [node name="colision_j1" type="CollisionShape2D" parent="jugador1/cuerpo_j1"]
 shape = SubResource( 27 )
 
 [node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
 position = Vector2( -0.250854, -1.5 )
-texture = ExtResource( 5 )
-hframes = 4
-frame = 1
+texture = ExtResource( 4 )
+hframes = 2
 
 [node name="Camera2D" type="Camera2D" parent="jugador1/cuerpo_j1"]
-position = Vector2( 83.5829, 6.93738 )
+position = Vector2( 113.225, 9.67842 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 
