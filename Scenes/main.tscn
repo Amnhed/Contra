@@ -25,3 +25,7 @@ shape = SubResource( 1 )
 [node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
 texture = ExtResource( 2 )
 hframes = 5
+
+[node name="Camera2D" type="Camera2D" parent="jugador1/cuerpo_j1"]
+current = true
+zoom = Vector2( 0.5, 0.5 )
