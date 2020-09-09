@@ -36,7 +36,7 @@ func _physics_process(delta):
 			get_node("animacion_j1").play("j_idle") #si puede saltar esta en el suelo entoncle es el personaje en reposo
 		
 	if(Input.is_action_pressed("tecla_z") && puede_saltar):
-		Velocidad.y -= VELOCIDAD_SALTO
+		Velocidad.y = -VELOCIDAD_SALTO
 		get_node("animacion_j1").play("j1_salto")
 		puede_saltar = false
 		

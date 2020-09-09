@@ -133,6 +133,9 @@ extents = Vector2( 47.4088, 4.17708 )
 extents = Vector2( 9.67815, 17.9722 )
 
 [sub_resource type="Animation" id=43]
+length = 0.3
+loop = true
+step = 0.4
 tracks/0/type = "value"
 tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
 tracks/0/interp = 1
@@ -140,7 +143,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( 0.12611 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ ExtResource( 5 ) ]
@@ -152,7 +155,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
+"times": PoolRealArray( 0.12611 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ 4 ]
@@ -164,10 +167,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 0 ]
+"values": [ 0, 1, 2, 3 ]
 }
 
 [sub_resource type="Animation" id=44]
@@ -607,7 +610,7 @@ shape = SubResource( 41 )
 [node name="jugador1" type="Position2D" parent="."]
 position = Vector2( 370.518, -9.39073 )
 script = ExtResource( 1 )
-GRAVEDAD = 5000.0
+GRAVEDAD = 6000.0
 VELOCIDAD_MOVIMIENTO = 4000.0
 VELOCIDAD_SALTO = 6000.0
 
