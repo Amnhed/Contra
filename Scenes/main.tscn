@@ -137,16 +137,16 @@ length = 0.3
 loop = true
 step = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
+tracks/0/path = NodePath("cuerpo_j1/spr_j1:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.12611 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ ExtResource( 5 ) ]
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("cuerpo_j1/spr_j1:hframes")
@@ -157,20 +157,32 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0.12611 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ 4 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("cuerpo_j1/spr_j1:frame")
+tracks/2/path = NodePath("cuerpo_j1/spr_j1:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"times": PoolRealArray( 0.12611 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("cuerpo_j1/spr_j1:vframes")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 0, 1, 2, 3 ]
+"values": [ 1 ]
 }
 
 [sub_resource type="Animation" id=44]
@@ -178,28 +190,28 @@ length = 0.4
 loop = true
 step = 0.4
 tracks/0/type = "value"
-tracks/0/path = NodePath("cuerpo_j1/spr_j1:hframes")
+tracks/0/path = NodePath("cuerpo_j1/spr_j1:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 5 ]
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0, 1, 2, 3, 4 ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("cuerpo_j1/spr_j1:frame")
+tracks/1/path = NodePath("cuerpo_j1/spr_j1:vframes")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 4 ]
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3 ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("cuerpo_j1/spr_j1:texture")
@@ -210,14 +222,26 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ ExtResource( 2 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("cuerpo_j1/spr_j1:hframes")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 5 ]
 }
 
 [sub_resource type="Animation" id=45]
 length = 0.1
 tracks/0/type = "value"
-tracks/0/path = NodePath("cuerpo_j1/spr_j1:texture")
+tracks/0/path = NodePath("cuerpo_j1/spr_j1:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -225,8 +249,8 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ ExtResource( 4 ) ]
+"update": 0,
+"values": [ 0 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("cuerpo_j1/spr_j1:hframes")
@@ -237,11 +261,11 @@ tracks/1/enabled = true
 tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
-"update": 1,
+"update": 0,
 "values": [ 2 ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("cuerpo_j1/spr_j1:frame")
+tracks/2/path = NodePath("cuerpo_j1/spr_j1:texture")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -249,8 +273,20 @@ tracks/2/enabled = true
 tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("cuerpo_j1/spr_j1:vframes")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0.1 ),
+"transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 0 ]
+"values": [ 1 ]
 }
 
 [node name="main" type="Node"]
@@ -622,8 +658,8 @@ shape = SubResource( 42 )
 
 [node name="spr_j1" type="Sprite" parent="jugador1/cuerpo_j1"]
 position = Vector2( -0.250854, -1.5 )
-texture = ExtResource( 4 )
-hframes = 2
+texture = ExtResource( 5 )
+hframes = 4
 
 [node name="Camera2D" type="Camera2D" parent="jugador1/cuerpo_j1"]
 position = Vector2( 113.225, 9.67842 )
