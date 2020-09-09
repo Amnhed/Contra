@@ -608,8 +608,8 @@ shape = SubResource( 41 )
 position = Vector2( 370.518, -9.39073 )
 script = ExtResource( 1 )
 GRAVEDAD = 5000.0
-VELOCIDAD_MOVIMIENTO = 1250.0
-VELOCIDAD_SALTO = 500.0
+VELOCIDAD_MOVIMIENTO = 4000.0
+VELOCIDAD_SALTO = 6000.0
 
 [node name="cuerpo_j1" type="KinematicBody2D" parent="jugador1"]
 position = Vector2( -2.42175, -6.72023 )
